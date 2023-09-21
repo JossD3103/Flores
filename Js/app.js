@@ -13,7 +13,7 @@ let h1 = document.getElementById("Titulo");
 let Boton1 = document.getElementById("B1");
 Boton1.addEventListener('click', function() {
     const ContenedorBotones = document.querySelector(".Con");
-    document.querySelector(".Texto").style.display = "block";
+    document.querySelector(".Texto").style.display = "flex";
     ContenedorBotones.style.display = "none";
     DibujarFlor(500, 100, 6, 30, 100, 200);
     h1.remove();
@@ -22,7 +22,7 @@ Boton1.addEventListener('click', function() {
 document.getElementById("B12").addEventListener('click', function() {
     const ContenedorBotones = document.querySelector(".Con");
     ContenedorBotones.style.display = "none";
-    document.querySelector(".Texto").style.display = "block";
+    document.querySelector(".Texto").style.display = "flex";
     CrearVarias();
     h1.remove();
 })
